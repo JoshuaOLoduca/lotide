@@ -1,13 +1,7 @@
-const args = process.argv.slice(2)
-
-
 // FUNCTION IMPLEMENTATION
-const assertArraysEqual = function(args) {
-  const firstArray = JSON.parse(args[0]);
-  const secondArray = JSON.parse(args[1]);
-  // const expectedPass = Boolean(args[2]);
+const assertArraysEqual = function(arrayOne, arrayTwo, expectedResult) {
 
-  return eqArrays(firstArray, secondArray)
+  assertEqual(eqArrays(arrayOne, arrayTwo), expectedResult);
 };
 
 const assertEqual = function(actual, expected) {
@@ -49,4 +43,4 @@ const areSameLength = function(firstItem, secondItem) {
 };
 
 // TEST CODE
-assertEqual(assertArraysEqual(args), true); // => true
+assertArraysEqual([1,1],[1,'1'], false); // => true
