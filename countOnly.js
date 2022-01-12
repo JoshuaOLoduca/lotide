@@ -5,7 +5,7 @@ const countOnly = function(allItems, itemsToCount) {
   for (let key in itemsToCount) {
     if (itemsToCount[key]) {
 
-      for (let item of allItems){
+      for (let item of allItems) {
         if (item === key) {
           if (count[key] === undefined) count[key] = 0;
           count[key] += 1;
@@ -15,7 +15,7 @@ const countOnly = function(allItems, itemsToCount) {
     }
   }
   return count;
-}
+};
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) console.log(
