@@ -1,7 +1,10 @@
 // FUNCTION IMPLEMENTATION
-const assertArraysEqual = function(arrayOne, arrayTwo, expectedResult) {
-
-  assertEqual(eqArrays(arrayOne, arrayTwo), expectedResult);
+const assertArraysEqual = function(actual, expected) {
+  const inspect = require('util').inspect;
+  if (eqArrays(actual, expected)) console.log(
+    `✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
+  else console.log(
+    `⛑️⛑️⛑️ Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
 };
 
 const assertEqual = function(actual, expected) {
@@ -43,4 +46,5 @@ const areSameLength = function(firstItem, secondItem) {
 };
 
 // TEST CODE
-assertArraysEqual([1,1],[1,'1'], false); // => true
+assertArraysEqual([1,1],[1,'1']); // => fail
+assertArraysEqual([1,1],[1,1]); // => fail
