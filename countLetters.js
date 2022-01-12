@@ -6,7 +6,7 @@ const countLetters = function(string) {
     count[letter]++;
   }
   return count;
-}
+};
 
 const removeChar = function(char, string) {
   let cleaned = '';
@@ -14,13 +14,6 @@ const removeChar = function(char, string) {
     if (letter !== char) cleaned += letter;
   }
   return cleaned;
-} 
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) console.log(
-    `✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  else console.log(
-    `⛑️⛑️⛑️ Assertion Failed: ${actual} !== ${expected}`);
 };
 
 console.log(countLetters('lighthouse in the house'));
