@@ -17,13 +17,6 @@ const assertArraysEqual = function(actual, expected) {
     `⛑️⛑️⛑️ Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
 };
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) console.log(
-    `✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  else console.log(
-    `⛑️⛑️⛑️ Assertion Failed: ${actual} !== ${expected}`);
-};
-
 const eqArrays = function(firstList, secondList) {
   let areSame = false;
 
