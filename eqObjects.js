@@ -101,11 +101,11 @@ const assertEqual = function(actual, expected) {
 
 console.log(eqObjects(
   { a: { z: 1 }, b: 2 },
-  { a: { z: 1 }, b: 2 })) // => true
+  { a: { z: 1 }, b: 2 })); // => true
 
 console.log(eqObjects(
   { a: { y: 0, z: 1 }, b: 2 },
-  { a: { z: 1}, b: 2 })) // => false
+  { a: { z: 1}, b: 2 })); // => false
 console.log(eqObjects(
-  { a: { y: 0, z: 1 }, b: 2 }, 
-  { a: 1, b: 2 })) // => false
+  { a: { y: 0, z: 1 }, b: 2 },
+  { a: 1, b: 2 })); // => false
