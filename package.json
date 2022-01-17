@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@jolduca/lotide",
   "version": "0.1.0",
   "description": "A recreation of lodash for learning purposes",
   "main": "lotide.js",

@@ -7,7 +7,8 @@ const takeUntil = function(array, callback) {
   }
 
   return slice;
-}
+};
+
 const assertArraysEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   if (eqArrays(actual, expected)) console.log(
