@@ -8,6 +8,7 @@ const flatten = require('./flatten');
 const without = require('./without');
 const takeUntil = require('./takeUntil');
 const map = require('./map');
+const findKeyByValue = require('./findKeyByValue');
 
 module.exports = {
   head,
@@ -20,4 +21,5 @@ module.exports = {
   without,
   takeUntil,
   map,
+  findKeyByValue,
 };
