@@ -31,3 +31,4 @@ The following functions are currently implemented:
 * `middle(...)`: gets the middle of odd and even arrays
 * `countLetters(...)`: counts the amount of chars in a string
 * `letterPositions(...)`: Gets the positions of every letter of a string and returns an object
+* `countOnly(...)`: Goes through an array of strings and counts only desired strings
