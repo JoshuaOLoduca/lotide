@@ -2,7 +2,7 @@
   "name": "lotide",
   "version": "0.1.0",
   "description": "A recreation of lodash for learning purposes",
-  "main": "assertEqual.js",
+  "main": "lotide.js",
   "directories": {
     "test": "test"
   },
