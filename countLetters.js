@@ -16,4 +16,6 @@ const removeChar = function(char, string) {
   return cleaned;
 };
 
-console.log(countLetters('lighthouse in the house'));
+module.exports = countLetters;
+
+// console.log(countLetters('lighthouse in the house'));

@@ -29,3 +29,4 @@ The following functions are currently implemented:
 * `head(...)`: gets the first element of an array
 * `tail(...)`: gets everything BUT the first element of an array
 * `middle(...)`: gets the middle of odd and even arrays
+* `countLetters(...)`: counts the amount of chars in a string
