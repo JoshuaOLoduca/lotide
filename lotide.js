@@ -7,6 +7,7 @@ const countOnly = require('./countOnly');
 const flatten = require('./flatten');
 const without = require('./without');
 const takeUntil = require('./takeUntil');
+const map = require('./map');
 
 module.exports = {
   head,
@@ -18,4 +19,5 @@ module.exports = {
   flatten,
   without,
   takeUntil,
+  map,
 };
