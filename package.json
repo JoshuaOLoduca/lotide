@@ -1,0 +1,22 @@
+{
+  "name": "lotide",
+  "version": "0.1.0",
+  "description": "A recreation of lodash for learning purposes",
+  "main": "assertEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaOLoduca/lotide.git"
+  },
+  "author": "Joshua Loduca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaOLoduca/lotide/issues"
+  },
+  "homepage": "https://github.com/JoshuaOLoduca/lotide#readme"
+}
