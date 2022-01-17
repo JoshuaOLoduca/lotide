@@ -32,3 +32,4 @@ The following functions are currently implemented:
 * `countLetters(...)`: counts the amount of chars in a string
 * `letterPositions(...)`: Gets the positions of every letter of a string and returns an object
 * `countOnly(...)`: Goes through an array of strings and counts only desired strings
+* `flatten(...)`: takes an array of elements and arrays and returns 1 total array containing all elements

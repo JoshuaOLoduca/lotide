@@ -4,6 +4,7 @@ const middle = require('./middle');
 const countLetters = require('./countLetters');
 const letterPositions = require('./letterPositions');
 const countOnly = require('./countOnly');
+const flatten = require('./flatten');
 
 module.exports = {
   head,
@@ -12,4 +13,5 @@ module.exports = {
   countLetters,
   letterPositions,
   countOnly,
+  flatten,
 };
