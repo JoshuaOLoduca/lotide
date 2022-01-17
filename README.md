@@ -37,3 +37,4 @@ The following functions are currently implemented:
 * `takeUntil(...)`: takes an array and callback. Goes through array and sends each item to the callback. if callback returns false, adds element to an array. Otherwise, if returns true, will stop and return array of items that returned false upto that point
 * `map(...)`: Returns an array after manipulating each element using the provided callback
 * `findKeyByValue(...)`: takes an object and finds the first key that has the same value as provided
+* `findKey(...)`: takes an object and finds the first key that is the same as provided

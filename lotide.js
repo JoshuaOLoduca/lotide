@@ -9,6 +9,7 @@ const without = require('./without');
 const takeUntil = require('./takeUntil');
 const map = require('./map');
 const findKeyByValue = require('./findKeyByValue');
+const findKey = require('./findKey');
 
 module.exports = {
   head,
@@ -22,4 +23,5 @@ module.exports = {
   takeUntil,
   map,
   findKeyByValue,
+  findKey,
 };
