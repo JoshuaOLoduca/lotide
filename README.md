@@ -33,3 +33,4 @@ The following functions are currently implemented:
 * `letterPositions(...)`: Gets the positions of every letter of a string and returns an object
 * `countOnly(...)`: Goes through an array of strings and counts only desired strings
 * `flatten(...)`: takes an array of elements and arrays and returns 1 total array containing all elements
+* `without(...)`: takes an array source and array of elements to remove from source. returns a copy of source array without elements from 2nd array

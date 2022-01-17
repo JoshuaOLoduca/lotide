@@ -5,6 +5,7 @@ const countLetters = require('./countLetters');
 const letterPositions = require('./letterPositions');
 const countOnly = require('./countOnly');
 const flatten = require('./flatten');
+const without = require('./without');
 
 module.exports = {
   head,
@@ -14,4 +15,5 @@ module.exports = {
   letterPositions,
   countOnly,
   flatten,
+  without,
 };
