@@ -1,12 +1,33 @@
-const assertEqual = require('../assertEqual');
+const { expect } = require('chai');
 const tail = require('../tail');
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
+describe("#tail", () => {
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+  it('should return ["Lighthouse", "Labs"] for ["Hello", "Lighthouse", "Labs"]', () => {
+    
+    const input = ["Hello", "Lighthouse", "Labs"];
+    const output = tail(input);
+    const expected = ["Lighthouse", "Labs"];
+
+    expect(output).to.deep.equal(expected);
+  });
+
+  it('result should start with "Lighthouse" when passed ["Hello", "Lighthouse", "Labs"]', () => {
+    
+    const input = ["Hello", "Lighthouse", "Labs"];
+    const output = tail(input)[0];
+    const expected = "Lighthouse";
+
+    expect(output).to.equal(expected);
+  });
+
+  it("should NOT modify original array", () => {
+    
+    const input = ["Hello", "Lighthouse", "Labs"];
+    const expected = [...input];
+    tail(input);
+
+    expect(input).to.deep.equal(expected);
+  });
+
+});
