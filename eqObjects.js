@@ -1,3 +1,5 @@
+const eqArrays = require('./eqArrays');
+
 const eqObjects = function(firstObj, secondObj) {
   let areEqual = false;
   let haveSameKeys = sameKeys(firstObj, secondObj);
@@ -49,43 +51,7 @@ const sameKeys = function(firstObj, secondObj) {
   return haveSameKeys;
 };
 
-const eqArrays = function(firstList, secondList) {
-  let areSame = false;
-
-  if (areSameLength(firstList, secondList)) {
-    areSame = haveSameContents(firstList, secondList);
-  }
-  return areSame;
-};
-
-const haveSameContents = function(firstList, secondList) {
-  let listLength = firstList.length;
-  let areSame = false;
-
-  for (let i = 0; i <= listLength; i++) {
-    if (firstList[i] !== secondList[i]) {
-      areSame = false;
-      break;
-    } else areSame = true;
-  }
-
-  return areSame;
-};
-
-
-const areSameLength = function(firstItem, secondItem) {
-  let sameLength = true;
-  if (firstItem.length !== secondItem.length) sameLength =  false;
-
-  return sameLength;
-};
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) console.log(
-    `✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  else console.log(
-    `⛑️⛑️⛑️ Assertion Failed: ${actual} !== ${expected}`);
-};
+module.exports = eqObjects;
 
 // const ab = { a: "1", b: "2" };
 // const ba = { b: "2", a: "1" };
@@ -99,13 +65,13 @@ const assertEqual = function(actual, expected) {
 // const cd2 = { c: "1", d: ["2", 3, 4] };
 // assertEqual(eqObjects(cd, cd2), false); // => false
 
-console.log(eqObjects(
-  { a: { z: 1 }, b: 2 },
-  { a: { z: 1 }, b: 2 })); // => true
+// console.log(eqObjects(
+//   { a: { z: 1 }, b: 2 },
+//   { a: { z: 1 }, b: 2 })); // => true
 
-console.log(eqObjects(
-  { a: { y: 0, z: 1 }, b: 2 },
-  { a: { z: 1}, b: 2 })); // => false
-console.log(eqObjects(
-  { a: { y: 0, z: 1 }, b: 2 },
-  { a: 1, b: 2 })); // => false
+// console.log(eqObjects(
+//   { a: { y: 0, z: 1 }, b: 2 },
+//   { a: { z: 1}, b: 2 })); // => false
+// console.log(eqObjects(
+//   { a: { y: 0, z: 1 }, b: 2 },
+//   { a: 1, b: 2 })); // => false

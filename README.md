@@ -38,3 +38,5 @@ The following functions are currently implemented:
 * `map(...)`: Returns an array after manipulating each element using the provided callback
 * `findKeyByValue(...)`: takes an object and finds the first key that has the same value as provided
 * `findKey(...)`: takes an object and finds the first key that is the same as provided
+* `eqObjects(...)`: takes two objects and returns if they are the same or not.
+* `eqArrays(...)`: takes two arrays and returns if they are the same or not.

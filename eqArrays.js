@@ -1,4 +1,3 @@
-const assertEqual = require('./assertEqual');
 // FUNCTION IMPLEMENTATION
 const eqArrays = function(firstList, secondList) {
   let areSame = false;
